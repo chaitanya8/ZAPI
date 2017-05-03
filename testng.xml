@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Sample Test Suite" parallel="false">
+    <parameter name="timeout" value="30"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="testKey" value="TEST-1"/>
+
+    <listeners>
+        <listener class-name="zapi.Listeners.CustomListener"/>
+    </listeners>
+    <test name="myTest">
+        <classes>
+            <class name="sample.myTest" />
+        </classes>
+    </test>
+</suite> 

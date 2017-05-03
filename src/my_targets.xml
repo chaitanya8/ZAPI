@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="" name="common_targets">
+    <property environment="env"/>
+    <property name="timeout" value="30"/>
+    <path id="classpath">
+        <fileset dir="../target/zapi-1.0-SNAPSHOT/lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <taskdef name="testng" classpathref="classpath" classname="org.testng.TestNGAntTask"/>
+
+    <target name="testngRun">
+        <testng suitename="Suite" mode="testng">
+            <xmlfileset dir="test/resources/SampleTest" includes="testng.xml"/>
+            <!--<classpath path="${classpath}"/>-->
+            <jvmarg value="-ea"/>
+        </testng>
+    </target>
+</project>

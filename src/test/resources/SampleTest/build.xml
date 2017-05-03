@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="testngRun" name="CookiedSeekerPAJ">
+
+    <property name="project.name" value="CookiedSeekerPAJ"/>
+    <property name="browser" value="firefox" />
+    <property name="site" value="full" />
+    <property name="grid" value="false" />
+    <property name="timeout" value="30" />
+
+    <import file="../../../my_targets.xml" />
+
+</project>
