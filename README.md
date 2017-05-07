@@ -8,5 +8,7 @@ When you run tests, you mention a test cycle under which you want the tests to b
 
 # Setup
 You will need a Jira setup with 'Zephy for Jira' & 'ZAPI' from the Atlassian marketplace.
+
 Zephyr for JIRA : https://marketplace.atlassian.com/plugins/com.thed.zephyr.je/cloud/overview
+
 Zephyr API from Jira marketplace : https://marketplace.atlassian.com/plugins/com.thed.zephyr.zapi/cloud/overview
